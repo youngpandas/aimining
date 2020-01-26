@@ -6,24 +6,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="consumer-admin" />
         <module name="consumeradmin" />
         <module name="consumerfront" />
+        <module name="provider-task" />
+        <module name="provider-user" />
         <module name="providertask" />
         <module name="provideruser" />
+        <module name="server-config" />
+        <module name="server-register" />
         <module name="serverconfig" />
         <module name="serverregister" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consumer-front" target="1.8" />
       <module name="serverregistery" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer-admin" options="-parameters" />
+      <module name="consumer-front" options="-parameters" />
       <module name="consumeradmin" options="-parameters" />
       <module name="consumerfront" options="-parameters" />
+      <module name="provider-task" options="-parameters" />
+      <module name="provider-user" options="-parameters" />
       <module name="providertask" options="-parameters" />
       <module name="provideruser" options="-parameters" />
+      <module name="server-config" options="-parameters" />
+      <module name="server-register" options="-parameters" />
       <module name="serverconfig" options="-parameters" />
       <module name="serverregister" options="-parameters" />
     </option>

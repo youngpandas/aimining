@@ -1,4 +1,4 @@
-package sicdp.entity;
+package com.sicdp.entity;
 
 
 import lombok.Data;
@@ -9,20 +9,13 @@ import javax.persistence.*;
 @Entity
 @Data
 @EntityListeners(AuditingEntityListener.class)
-public class Task {
+public class Model {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer nid;
 
-    private String param;
+    private String name;
 
-    private Integer jobId;
-
-    private Integer nodeId;
-
-    private String pythonPath;
-
-    private String modelName;
-
+    private String path;
 }

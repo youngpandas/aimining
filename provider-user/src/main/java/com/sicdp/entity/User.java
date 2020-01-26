@@ -1,11 +1,9 @@
 package com.sicdp.entity;
 
 import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 @Data
@@ -18,10 +16,4 @@ public class User {
 
     private String username;
     private String password;
-    private String nickname;
-    private String gender;
-    private String telephone;
-
-    @CreatedDate
-    private Date createTime;
 }

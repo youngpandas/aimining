@@ -1,0 +1,4 @@
+port:
+    config: 8888 ${root}/config
+    register: 8761 http://localhost:8761/eureka/
+    provider: 8010 8020

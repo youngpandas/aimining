@@ -14,7 +14,6 @@
         <module>server-config</module>
         <module>provider-user</module>
         <module>provider-task</module>
-        <module>consumer-front</module>
         <module>consumer-admin</module>
     </modules>
 
